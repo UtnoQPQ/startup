@@ -1,0 +1,88 @@
+body {
+  background-color: #312929;
+  height: 100%;
+}
+header, section, aside, footer, nav, article {
+   background-color: #636060;   
+   padding: 10px;   
+   margin: 10px;
+   border-radius: 10px;   
+}
+#inside
+{
+  background-color: #b0acac;
+  box-sizing: border-box;
+}
+h4 {
+  font-family: sans-serif;
+  text-align: center;
+  color: white;
+}
+nav {
+  clear:left;
+  float:left;
+  width: 15%;
+  height: 450px;
+  box-sizing: border-box;
+}
+aside {
+  float: left;
+  width: 15%;
+  height: 450px;
+  box-sizing: border-box;
+}
+section {
+  float: left;
+  width: 65%;
+  height: 450px;
+  box-sizing: border-box;
+}
+
+article
+{
+  height: 170px;
+  box-sizing: border-box;  
+}
+
+.cle
+{
+  overflow: auto;
+}
+
+header, footer, aside, nav
+{
+  background: red;
+}
+
+
+
+html *
+{
+  font-size: 14px;
+  font-family: sans-serif;
+}
+.header{
+  font-size: 46px !important;
+}
+
+.footer, .sidebar {
+  font-size: 10px !important;
+}
+
+.content {
+  font-size: 14px !important;
+}
+
+.navigation {
+  font-size: 12px !important;
+}
+
+*[class$="r"]
+{
+  background: magenta !important;
+}
+
+*[class*="a"]:not(*[class$="r"])
+{
+  background: blue !important;
+}
