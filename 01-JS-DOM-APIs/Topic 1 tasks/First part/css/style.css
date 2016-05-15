@@ -1,0 +1,16 @@
+.imgMov
+{
+  width: 400px;
+  height: 450px;
+}
+
+#magicBox div
+{
+  border: 1px black solid;
+  display: block;
+  float: left;
+  width:400px;
+  height:650px;
+  margin: 10px;
+}
+
