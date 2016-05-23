@@ -1,0 +1,30 @@
+  <div class="col-6">
+            <label class="left">Select a filter:</label>
+            <form method="get" action="/#/moviesSelectionAlphabetical">
+              <input ng-click="" class="left" type="submit" id="btn_All" value="All">
+            </form>
+            <form method="get" action="/#/popularMovies">
+              <input class="left" type="submit" id="btn_Popular" value="Popular">
+            </form>
+            <form method="get" action="/#/recentMovies">
+              <input class="left" type="submit" id="btn_Recent" value="Recent"> 
+            </form>
+            <label>Search movies</label>
+            <input type="search" ng-model="search" placeholder="Search...">
+            <label>Genres</label>
+            <select ><option ng-repeat= "genre in genres">{{genre}}</option></select>
+   </div>   
+
+  <div class="container col-12">           
+           <div class="movieSquare" ng-repeat= "movie in movies | filter:search">
+           <a href="#/movies/{{$index}}">          
+            <img class="imgMov" ng-src="{{ movie.Poster }}"> 
+            <p> Name: {{ movie.Title }}</p> 
+            <p> Director: {{ movie.Director}}</p> 
+            <p> Year: {{ movie.Year}}</p> 
+            <p class="Actors"> Actors: {{ movie.Actors }}</p>
+        	</a>
+      </div>    
+  <div class="row"></div>
+
+

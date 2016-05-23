@@ -1,0 +1,19 @@
+ <div class="container col-12">
+
+    <h2>Recent Movies</h2>    
+      
+        
+        
+           <div class="movieSquare" ng-repeat= "movie in movies">
+           <a href="#/movies/{{$index}}">          
+            <img class="imgMov" ng-src="{{ movie.Poster }}">
+
+            <p> Name: {{ movie.Title }}</p> 
+            <p> Director: {{ movie.Director}}</p> 
+            <p> Year: {{ movie.Year}}</p> 
+            <p class="Actors"> Actors: {{ movie.Actors }}</p>
+          </a>
+          </div>
+      
+
+  </div>

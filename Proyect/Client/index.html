@@ -1,0 +1,98 @@
+<!doctype html>
+<html >
+  <head>
+     <title>Proyect Globant 2016</title>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link href="css/normalize.css" rel="stylesheet" type= "text/css">
+     <link href="css/style.css" rel="stylesheet" type= "text/css">
+     <script src="js/angular.min.js"></script>
+     <script src="js/angularRoute.js"></script>
+  </head>
+   <body ng-app="app">
+  <div class="header col-12">
+  <div class="menu col-6 align">
+    <ul>
+      <li>
+        <a href="#/">Home</a>
+      </li>
+      <li>
+        <a href="#/moviesSelection">Movies</a>
+      </li>
+      <li>
+        <a>Help</a>
+      </li>
+      <li>
+        <a>About us</a>
+      </li>
+      <li>
+        <a>Contact</a>
+      </li>
+    </ul>
+  </div>
+ </div>
+
+ <div class="row">
+ </div>
+   <div ng-view></div>  
+       
+   <div class="col-12 footer ">
+  <div class="col-3 block left footerIcons">
+    <ul>
+      <li>youtube/miCanal</li>
+      <li>facebook/miFacebook</li>
+      <li>twitter/miTwitter</li>
+    </ul>
+  </div>
+  <div class="col-2 block left footerBox">
+    <ul>
+      <li>
+        Option One
+      </li>
+      <li>
+        Option Two
+      </li>
+      <li>
+        Option Three
+      </li>
+    </ul>    
+  </div>
+  <div class="col-2 block left footerBox separatedBox">
+    <ul>
+      <li>
+        Option One
+      </li>
+      <li>
+        Option Two
+      </li>
+      <li>
+        Option Three
+      </li>
+    </ul>    
+  </div>
+  <div class="absolute positionBotRight">
+    <p>
+      Copyright Ⓒ 2016
+    </p>
+  </div>  
+</div>
+   
+     <!-- Modules -->
+    <script src="js/app.js"></script>
+    <!-- Controllers -->
+    <script src="js/controllers/HomeController.js"></script>    
+    <script src="js/controllers/MoviesController.js"></script>
+    <script src="js/controllers/SelectorController.js"></script>
+    <script src="js/controllers/AlpMoviesController.js"></script>
+    <script src="js/controllers/PopMoviesController.js"></script>
+    <script src="js/controllers/RecMoviesController.js"></script>
+    <script src="js/controllers/GenreController.js"></script>
+    <!-- Services -->
+    <script src="js/services/movies.js"></script>
+
+    <!-- Directives -->
+    <script src="js/directives/movieInfo.js"></script>
+
+   
+  </body>
+</html>

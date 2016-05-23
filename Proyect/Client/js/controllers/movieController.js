@@ -1,0 +1,6 @@
+angular.module("app")
+.controller('MovieController', ['$scope', 'movies', '$routeParams', function($scope, movies, $routeParams) {
+  movies.success(function(data) {
+    $scope.detail = data[$routeParams.id];
+  });
+}]);

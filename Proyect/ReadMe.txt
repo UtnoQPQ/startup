@@ -1,0 +1,1 @@
+Hello, this app open in port 8081, in CMD just type "node server.js", over the file of this proyect, and in browser go to http://127.0.0.1:8081. I removed express and body-parser modules, if you need it you have to download again. Enjoy!
